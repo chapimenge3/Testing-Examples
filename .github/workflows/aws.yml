@@ -16,7 +16,7 @@ jobs:
           echo "${{ secrets.SSH_KEY }}" > server.pem
           chmod 400 server.pem
           # connect to the user with our confirmation
-          ssh -o "StrictHostKeyChecking no" -i server.pem {{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}
+          ssh -o "StrictHostKeyChecking no" -i server.pem ${{secrets.SERVER_USER}}@${{secrets.SERVER_IP}}
           ls
           cd project
           ls 
