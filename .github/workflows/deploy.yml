@@ -16,8 +16,6 @@ jobs:
       
       - name: Print the tag name
         run: |
-        echo "github.ref is ${{ github.ref }}"
-        echo "github.ref_name is ${{ github.ref_name }}"
-        echo "github.ref_type is ${{ github.ref_type }}"
-
-  
+          echo "github.ref is ${{ github.ref }}"
+          echo "github.ref_name is ${{ github.ref_name }}"
+          echo "github.ref_type is ${{ github.ref_type }}"
