@@ -10,8 +10,8 @@ jobs:
     name: Deploy only on main branch
     runs-on: ubuntu-latest
     # check the branch is main
-    if: github.ref == 'refs/heads/main'
     steps:
       - name: Testing if the action is working
-        run: echo "Hello World"
+        run: echo "Release is published"
+
   
