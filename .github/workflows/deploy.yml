@@ -15,6 +15,9 @@ jobs:
         run: echo "Release is published"
       
       - name: Print the tag name
-        run: echo "Tag name is ${{ github.ref }}"
+        run: |
+        echo "github.ref is ${{ github.ref }}"
+        echo "github.ref_name is ${{ github.ref_name }}"
+        echo "github.ref_type is ${{ github.ref_type }}"
 
   
