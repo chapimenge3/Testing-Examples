@@ -19,3 +19,4 @@ jobs:
           echo "github.ref is ${{ github.ref }}"
           echo "github.ref_name is ${{ github.ref_name }}"
           echo "github.ref_type is ${{ github.ref_type }}"
+          echo "github is ${{ github }}"
