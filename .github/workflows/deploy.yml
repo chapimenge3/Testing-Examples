@@ -1,9 +1,6 @@
-name: Deployment
+name: Deploy on release
 
 on:
-  push:
-    branches:
-      - main
   release:
     types:
       - published
@@ -11,6 +8,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    # check the branch is main
+    if: github.ref == 'refs/heads/main'
     steps:
       - name: Testing if the action is working
         run: echo "Hello World"
+  
