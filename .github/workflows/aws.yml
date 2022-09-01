@@ -9,7 +9,8 @@ on:
       - published
 
 jobs:
-  deploy:
+  deploy-release-push:
+    name: Deploy on release or push to main
     runs-on: ubuntu-latest
     steps:
       - name: Testing if the action is working
