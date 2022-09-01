@@ -13,5 +13,8 @@ jobs:
     steps:
       - name: Testing if the action is working
         run: echo "Release is published"
+      
+      - name: Print the tag name
+        run: echo "Tag name is ${{ github.ref }}"
 
   
