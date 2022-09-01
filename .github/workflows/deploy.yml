@@ -20,3 +20,5 @@ jobs:
           echo "github.ref_name is ${{ github.ref_name }}"
           echo "github.ref_type is ${{ github.ref_type }}"
           echo "github is ${{ toJSON(github) }}"
+          echo "__version__ = ${{ github.ref_name }}" > __version__.py
+          cat __version__.py
